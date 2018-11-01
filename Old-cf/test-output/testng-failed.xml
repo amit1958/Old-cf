@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium]" parallel="methods">
+  <parameter name="driverexe" value="D:\\drivers\\geckodriver\\geckodriver.exe"/>
+  <parameter name="url" value="https://qa.lockthedeal.com/login/auth"/>
+  <test thread-count="5" name="testngTest(failed)" parallel="methods">
+    <parameter name="password" value="1234"/>
+    <parameter name="searchkey" value="amaron"/>
+    <parameter name="username" value="9811854500"/>
+    <classes>
+      <class name="Selenium.parameterization">
+        <methods>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="searchItems" invocation-numbers="0"/>
+          <include name="startup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- Selenium.parameterization -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [Selenium] -->

@@ -1,0 +1,6 @@
+package javaLearning;
+
+public interface interfaceExample {
+	public void myinterface();
+
+}

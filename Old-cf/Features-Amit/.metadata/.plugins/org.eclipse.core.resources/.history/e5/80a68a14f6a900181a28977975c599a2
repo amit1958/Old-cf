@@ -1,0 +1,10 @@
+package javaLearning;
+
+public class patern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

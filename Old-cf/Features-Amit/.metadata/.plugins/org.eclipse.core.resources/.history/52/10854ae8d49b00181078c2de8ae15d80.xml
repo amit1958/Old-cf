@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium" parallel="methods">
+	<test name="testngTest">
+		<classes>
+			<class name="Selenium.LoginByTestNG" />
+		</classes>
+		<classes>
+			<class name="Selenium.placeorderTest" />
+		</classes>
+	</test>	
+</suite>

@@ -1,0 +1,19 @@
+package javaLearning;
+
+public class childAbstract extends myAbstract {
+	public int x =20;
+	public static void main(String[] args){
+		myAbstract abst= new childAbstract();
+		abst.myabsMethod();
+	}
+
+	@Override
+	void myabsMethod() {
+		// TODO Auto-generated method stub
+		
+	}
+	void myRef(int a){
+		System.out.println("Value fo x is " +x);
+	}
+
+}

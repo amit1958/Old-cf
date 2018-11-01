@@ -1,0 +1,12 @@
+package javaLearning;
+
+public class myClass implements interfaceExample {
+	public static void main(String[] args){
+		interfaceExample myinter = new myClass();
+		myinter.myinterface();
+	}
+	public void myinterface(){
+		System.out.println("calling my interface method");
+	}
+
+}

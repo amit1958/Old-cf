@@ -1,0 +1,8 @@
+package Selenium;
+
+public class Base {
+	public static final String chrome = System.setProperty("webdriver.chrome.driver","D:\\drivers\\chromedriver\\chromedriver.exe");
+
+	public static final String mozilla =System.setProperty("webdriver.gecko.driver","D:\\drivers\\geckodriver\\geckodriver.exe");
+
+}

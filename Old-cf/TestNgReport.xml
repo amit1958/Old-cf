@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium" parallel="methods">
+	<parameter name="driverexe" value= "D:\\drivers\\geckodriver\\geckodriver.exe" />
+	<parameter name="url" value ="https://qa.lockthedeal.com/login/auth" />
+<test name="testngTest">
+	<parameter name="username" value= "9811854502" />
+	<parameter name="password" value="1234" />
+	<parameter name="username" value= "9811854500" />
+	<parameter name="password" value="1234" />
+	<parameter name="searchkey" value="exide" />
+	<parameter name="searchkey" value="amaron" />
+		<classes>
+			<!-- <class name="Selenium.LoginByTestNG" /> -->
+			<class name="Selenium.parameterization" />
+			<!--  <class name="Selenium.placeorderTest" /> -->
+			<!-- <class name="Selenium.ToolTip" /> -->		
+		</classes>
+		
+	</test>	
+</suite>

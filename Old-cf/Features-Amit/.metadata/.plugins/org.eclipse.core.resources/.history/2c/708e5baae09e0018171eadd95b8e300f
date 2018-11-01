@@ -1,0 +1,16 @@
+package Selenium;
+
+public class Constants {
+	 
+    public static final String URL = "http://qa.lockthedeal.com/login/auth";
+    public static final String URL1 = "https://qa.lockthedeal.com/";
+
+    public static final String Username = "9811854502";
+
+    public static final String Password = "1234";
+
+    public static final String Path_TestData = "D:\\";
+
+    public static final String File_TestData = "TestData.xlsx";
+
+ }

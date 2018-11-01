@@ -1,0 +1,22 @@
+package javaLearning;
+
+public class myClass implements interfaceExample {
+	public static void main(String[] args){
+		interfaceExample myinter = new myClass();
+		myinter.myinterface();
+		myinter.mymethodOne();
+		
+		
+	}
+	
+	public void myinterface(){
+		System.out.println("calling my interface method");
+	}
+	@Override
+	public void mymethodOne() {
+		// TODO Auto-generated method stub
+		System.out.println("calling my interface Two");
+		
+	}
+
+}

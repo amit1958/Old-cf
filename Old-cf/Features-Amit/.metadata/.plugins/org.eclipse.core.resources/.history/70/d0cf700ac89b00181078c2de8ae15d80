@@ -1,0 +1,63 @@
+package Selenium;
+import static org.testng.Assert.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+public class placeorderTest {
+		static WebDriver driver;
+	 //static String url ="http://qa.lockthedeal.com";
+		@BeforeMethod
+		
+	 public static void setUp(){
+			
+			System.setProperty("webdriver.gecko.driver","D:\\drivers\\geckodriver\\geckodriver.exe");
+//			System.setProperty("webdriver.chrome.driver","D:\\drivers\\chromedriver\\chromedriver.exe");
+			driver= new FirefoxDriver();
+			
+//			driver= new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.get(Constants.URL);
+		}
+		
+		@Test
+		public  void LoginTest() throws InterruptedException
+		{
+			//driver.navigate().to("http://www.lockthedeal.com/login/auth");
+			driver.findElement(By.cssSelector("a.already-user-login-now.buy-now-button")).click();
+			WebElement username= driver.findElement(By.id("loginusername"));
+			username.sendKeys(Constants.Username);
+			WebElement password= driver.findElement(By.id("password"));
+			password.sendKeys(Constants.Password);
+			driver.findElement(By.id("submit")).click();
+			String expect = "List";
+			Assert.assertEquals(driver.getTitle(), expect);	
+			driver.navigate().to("http:/www.lockthedeal.com/");
+		}
+		
+		@Test
+		public void addcartTest1(){
+			driver.navigate().to("http://www.lockthedeal.com/exide-mileage-mi35r-35ah-24m24m/p/5874ca76e4b04de6f667f39c");
+			
+			}
+		
+
+		private void addcartTest() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		private void addtocartTest() {
+			// TODO Auto-generated method stub
+			
+		}
+}
