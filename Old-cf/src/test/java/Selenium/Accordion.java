@@ -94,6 +94,6 @@ public class Accordion {
 	}
 	@AfterMethod
 	public void stop(){
-		driver.close();
+		driver.quit();
 	}
 }
